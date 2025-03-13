@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="message-header">
+      <img src="C:\Users\Vaishnavi\Downloads\avatar.jpg" alt="User Avatar" class="avatar">
+      <div class="user-details">
+        <h4>Rasha</h4>
+        <p>Last seen: 5 minutes ago</p>
+      </div>
+    </div>
+
+    <div class="chat-box">
+      <div class="message-page" id="messagePage">
+        <!-- Incoming message -->
+        <div class="message incoming">
+          <img src="C:\Users\Vaishnavi\Downloads\avatar.jpg" height="30" width="30" alt="Sender Avatar" class="avatar">
+          <div class="message-content">
+            <p>Hello, how are you?</p>
+            <span class="time">10:30 AM</span>
+          </div>
+        </div>
+
+        <!-- Outgoing message -->
+        <div class="message outgoing">
+          <div class="message-content">
+           
+            <p>I'm good, thanks! What about you?</p>
+            
+            <span class="time">10:31 AM</span>
+          </div>
+          <img src="C:\Users\Vaishnavi\Downloads\student.jpg" height="30" width="30" alt="Sender Avatar" class="avatar">
+        </div>
+      </div>
+
+      <div class="message-bottom">
+        <textarea id="messageInput" placeholder="Type a message" rows="2"></textarea>
+
+        <button id="sendMessage">SEND</button>
+        </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
